@@ -3,7 +3,7 @@ Utility libraries for Google Maps JavaScript API v3
 
 ## Description
 
-Fork to diplay cluserer as alarms
+Fork to display clusterer as alarms
 
 In this project you can find a set of utility libraries developed for Google Maps JavaScript API v3:
 
