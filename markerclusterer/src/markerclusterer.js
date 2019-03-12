@@ -362,8 +362,7 @@ MarkerClusterer.prototype.getMaxZoom = function() {
 MarkerClusterer.prototype.calculator_ = function(markers, numStyles) {
   var index = 0;
    
-  let isAlarmArray = markers.map(item=> item.isAlarm);
-  let alarmIndex = isAlarmArray.includes(true);
+  var alarmIndex = markers.map(item=> item.isAlarm).includes(true);
   
   if(alarmIndex === true) {
     index = 1;
@@ -377,11 +376,10 @@ MarkerClusterer.prototype.calculator_ = function(markers, numStyles) {
     dv = parseInt(dv / 10, 10);
   }
  
-  let obj = {
+  return {
     text: count,
     index: index
   };
-  return obj;
 };
 
 
