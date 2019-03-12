@@ -361,18 +361,27 @@ MarkerClusterer.prototype.getMaxZoom = function() {
  */
 MarkerClusterer.prototype.calculator_ = function(markers, numStyles) {
   var index = 0;
+   
+  let isAlarmArray = markers.map(item=> item.isAlarm);
+  let alarmIndex = isAlarmArray.includes(true);
+  
+  if(alarmIndex === true) {
+    index = 1;
+  } else {
+    index = 2;
+  }
+
   var count = markers.length;
   var dv = count;
   while (dv !== 0) {
     dv = parseInt(dv / 10, 10);
-    index++;
   }
-
-  index = Math.min(index, numStyles);
-  return {
+ 
+  let obj = {
     text: count,
     index: index
   };
+  return obj;
 };
 
 
