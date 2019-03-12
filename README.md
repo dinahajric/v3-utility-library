@@ -3,6 +3,8 @@ Utility libraries for Google Maps JavaScript API v3
 
 ## Description
 
+Fork to diplay cluserer as alarms
+
 In this project you can find a set of utility libraries developed for Google Maps JavaScript API v3:
 
 - [ArcGIS Server Link for Google Maps JavaScript API V3]
